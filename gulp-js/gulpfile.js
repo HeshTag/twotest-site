@@ -15,7 +15,7 @@ function styleScss(done) {
 	  }) )
 	  .on('error', console.error.bind(console))
 	  .pipe( autoprefixer({
-	  	overrideBrowserslist: require('./package.json').overrideBrowserslist
+	  	overrideBrowserslist: "last 2 versions"
 	  }) )
 	  .pipe( rename({suffix: '.min'}) )
 	  // .pipe(sourcemaps.write('./'))

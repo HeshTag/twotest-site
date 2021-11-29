@@ -18,8 +18,5 @@
     "gulp-sourcemaps": "^3.0.0",
     "node-sass": "^6.0.1",
     "sass": "^1.43.5"
-  },
-  "overrideBrowserslist": [
-    "last 2 versions"
-  ]
+  }
 }
