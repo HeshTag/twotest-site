@@ -1,11 +1,11 @@
 $color: #111;
 $color-hover: #afafaf; 
 
+/* All other */
 * {
 	padding: 0;
 	margin: 0;
 }
-
 html, body {
 	width: 100%;
 	height: 100%;
@@ -16,7 +16,6 @@ html, body {
 	background-color: #fff;
 	min-width: 320px;
 }
-
 .navbar-brand {
 	img {
 		width: 100%;
@@ -31,22 +30,20 @@ html, body {
 	    	linear-gradient(to left, rgba(255,0,0, 0.5), rgba(0, 0, 255, 0.5));
 	}
 }
-
 img {
 	max-width: 100%;
 	height: auto;
 }
-
 section {
 	padding: 50px 0;
 }
-
 a {
 	color: $color;
 	&:hover {
 		color: $color-hover;
 	}
 }
+/* All other */
 
 /* Header */
 .navbar-light {
@@ -58,14 +55,12 @@ a {
 		}
 	}
 }
-
 .navbar-nav {
 	.dropdown-menu {
 		right: 0;
 		left: auto;
 	}
 }
-
 .top-menu {
 	li {
 		a::after {
@@ -82,7 +77,6 @@ a {
 		}
 	}
 }
-
 .modal-body {
 	img {
 		max-width: 100px;
@@ -90,8 +84,7 @@ a {
 }
 /* Header */
 
-
-
+/* Main */
 /* Carousel */
 .my-carousel {
 	padding: 0;
@@ -105,14 +98,101 @@ a {
 }
 /* Carousel */
 
-// Foundation CSS
-// Materialize CSS
-// Skeleton CSS
+/* Product card */
+.product-card {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+	transition: all .3s;
+	margin-bottom: 9%;
+	&:hover {
+		box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+	}
 
-// Bootstrap 5
-// https://www.youtube.com/watch?v=kaLZgD-Ctss&list=PLD-piGJ3Dtl3qZFKzosT47lCCMEcqMK_L&index=1
-// https://www.youtube.com/watch?v=z6a2BGeYwpk&list=PLD-piGJ3Dtl3qZFKzosT47lCCMEcqMK_L&index=2 
-// https://www.youtube.com/watch?v=5Q-lv5xuFu0&list=PLD-piGJ3Dtl3qZFKzosT47lCCMEcqMK_L&index=3 
-// https://www.youtube.com/watch?v=cyyy1nisy1I&list=PLD-piGJ3Dtl3qZFKzosT47lCCMEcqMK_L&index=4 
-// https://www.youtube.com/watch?v=EP4qGTSEs4U&list=PLD-piGJ3Dtl3qZFKzosT47lCCMEcqMK_L&index=5 
-// https://www.youtube.com/watch?v=A6r6c5aX4XE&list=PLD-piGJ3Dtl3qZFKzosT47lCCMEcqMK_L&index=6
+	.product-thumb {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 200px;
+			padding: 20px;
+		}
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	.product-details {
+		padding: 20px;
+		padding-bottom: 0;
+		h4 {
+			a {
+				font-size: 1em;
+				font-weight: 500;
+				display: block;
+				height: 25px;
+				overflow: hidden;
+				text-decoration: none;
+			}
+		}
+		p {
+			font-size: 1em;
+			color: #444;
+			height: 70px;
+			overflow: hidden;
+		}
+	}
+
+	.product-bottom-details {
+		overflow: hidden;
+		border-top: 1px solid #eee;
+		padding: 5% 10%;
+		.product-price {
+			color: #e8373e;
+			font-weight: 600;
+			small {
+				color: #000;
+				font-weight: normal;
+				text-decoration: line-through;
+			}		
+		}
+		.product-links {
+			font-size: 1.2em;
+		}
+	}
+}
+/* Product card */
+/* Main */
+
+/* Footer */
+.footer {
+	background: #343434;
+	padding: 5% 0;
+	h4 {
+		color: #ccc;
+		text-transform: uppercase;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 1%;
+	}
+	a {
+		text-decoration: none;
+		transition: all .2s;
+	}
+	a, li {
+		color: #c8c8c8;
+	}
+	a:hover {
+		color: white;
+	}
+	li {
+		a {
+			display: block;
+		}
+	}
+	.footer-icons {
+		font-size: 1.7em;
+		a {
+			padding: 1%;
+		}
+	}
+}
+/* Footer */
